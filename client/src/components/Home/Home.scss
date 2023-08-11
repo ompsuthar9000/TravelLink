@@ -1,0 +1,18 @@
+@import "./../../css-config/mixins.scss";
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+
+    .h1 {
+        margin-top: 10px;
+        font-weight: 700;
+
+        @include md {
+            font-size: 28px;
+        }
+    }
+}

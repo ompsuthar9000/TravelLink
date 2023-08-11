@@ -1,0 +1,220 @@
+@import "../../../../../css-config/mixins.scss";
+
+.buscardbody {
+    background: rgba(0, 0, 0, 0.03);
+    width: 80vw;
+    height: fit-content;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.938rem;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: 15px auto;
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.05);
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-around;
+
+        .plasehold {
+
+            h3 {
+                color: rgba(0, 0, 0, 0.5);
+                font-size: 14px;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+
+        }
+
+        .btnbook {
+            button {
+                border: 1px solid blue;
+                background: blue;
+                color: white;
+                padding: 8px;
+                border-radius: 10px;
+                font-weight: bold;
+
+            }
+        }
+
+    }
+}
+
+
+
+
+
+.Green {
+    background: green;
+
+}
+
+.Yellow {
+    background: yellow;
+
+}
+
+.Red {
+    background-color: red;
+
+}
+
+.retting {
+    width: fit-content;
+    height: 20px;
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+    margin: auto 0;
+}
+
+.rattingdiv {
+    p {
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 14px;
+    }
+}
+
+.icons_ {
+    color: rgba(0, 0, 0, 0.6);
+
+}
+
+.row2 {
+    justify-content: space-between !important;
+    padding: 0 50px;
+    align-items: end;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .buscardbody {
+        width: 21.875rem;
+        height: 15.625rem;
+        flex-direction: row;
+        padding: 13px;
+
+    }
+
+    .row {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .plasehold {
+        margin-right: 5px;
+
+        h3 {
+            font-size: 14px !important;
+
+        }
+
+        p {
+            font-size: 16px !important;
+        }
+    }
+
+    .row2 {
+
+        padding: 8px;
+    }
+
+    .smhide {
+        display: none;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .buscardbody {
+        .busbody {
+            display: none;
+        }
+    }
+
+    .remove {
+        display: none;
+    }
+}
+
+.bookbtn {
+    width: 100px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+}
+
+.divtickets {
+
+
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    width: 130px;
+    text-align: center;
+
+    div {
+
+        width: 140px;
+        height: 80px;
+        word-wrap: break-word;
+
+
+        p {
+            font-weight: 500;
+        }
+
+        span {
+            overflow: hidden;
+            height: inherit;
+            width: inherit;
+        }
+
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .animation {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+
+        .seatLeged {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 10px;
+
+            padding: 10px;
+
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+    }
+
+
+    .busbody {
+        width: fit-content !important;
+
+    }
+}

@@ -1,0 +1,17 @@
+.heder {
+    color: white;
+    z-index: 99999;
+
+
+    select {
+
+        border: 2px solid white;
+        border-radius: 10px;
+
+        option {
+            background: rgb(51, 65, 85);
+            padding: 5px;
+
+        }
+    }
+}

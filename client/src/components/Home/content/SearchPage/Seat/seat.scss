@@ -1,0 +1,68 @@
+@import "./../../../../../css-config/mixins.scss";
+
+.busbody {
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    width: 400px;
+    height: 180px;
+    border-radius: 3px;
+    background-color: white;
+
+
+
+
+
+}
+
+.divider {
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.01);
+
+}
+
+
+
+
+@keyframes slideCartWindowopen {
+    0% {
+        transform: translatey(-100%);
+    }
+
+    100% {
+        transform: translatey(0%);
+    }
+}
+
+.seatLeged {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    span {
+        text-align: justify;
+        border-left: 10px solid;
+        padding-left: 7px;
+
+    }
+
+    .white {
+        border-color: white;
+    }
+
+    .green {
+        border-color: green;
+    }
+
+    .red {
+        border-color: red;
+    }
+
+}
+
+.animation {
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+
+@media only screen and (max-width: 600px) {}
